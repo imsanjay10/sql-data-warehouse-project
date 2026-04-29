@@ -1,8 +1,9 @@
 /*
 -----------------------------------------------------------------
-DDL Script - Creates bronze level tables
+Stored procedure script - Loads data into bronze schema using the external csv files
+	- truncates the table before loading the data
+	- uses BULK insert to load the data from external csv
 
-If a table already exists, it deletes it and then recreates the same if there is any updates.
 -----------------------------------------------------------------
 */
 
